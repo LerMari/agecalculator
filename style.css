@@ -1,5 +1,54 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Offwhite: hsl(0, 0%, 94%);
+--Lightgrey: hsl(0, 0%, 86%);
+--Smokeygrey: hsl(0, 1%, 44%);
+--Offblack: hsl(0, 0%, 8%);
+--Purple: hsl(259, 100%, 65%);
+--Lightred: hsl(0, 100%, 67%);
+
+}
+
+
+@font-face {
+    font-family: Pop;
+    src: url(./assets/fonts/Poppins-Regular.ttf)
+
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Pop !important;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Offwhite);
+}
+
+.container{
+    background-color: var(--White);
+    width: 420px;
+    max-width: 80%;
+    padding: 30px;
+    position: relative;
+    border-bottom-right-radius: 150px;
+}
+
+input {
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--Offwhite);
+    /* border: none; */
+    outline: none;
+}
+
+input:focus{
+    border: 2px solid var(--Purple);
 }
