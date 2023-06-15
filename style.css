@@ -52,3 +52,67 @@ input {
 input:focus{
     border: 2px solid var(--Purple);
 }
+
+small {
+    color: red;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.submit-btn {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    background-color: var(--Purple);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+}
+
+.submit-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.output span {
+    font-size: 2.75rem;
+    color: var(--Purple);
+    font-style: italic;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.input-flex {
+    display: flex;
+    border-bottom: 2px solid var(--Offwhite);
+    margin-bottom: 20px;
+}
+
+@media(max-width:768px){
+    input{
+        width: 80%;
+    }
+    .output span{
+        font-size: 1.75rem;
+    }
+    .submit-btn {
+        width: 40px;
+        height: 40px;
+        right: 40px;
+        top: 90px;
+    }
+    .submit-btn img{
+        transform: scale(0.5);
+    }
+}
